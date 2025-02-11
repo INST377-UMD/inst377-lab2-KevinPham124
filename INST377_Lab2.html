@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>INST377 - Kevin's Form</title>
+        <style>
+            body {
+                background-color: pink;
+            }
+
+            input[type="submit"] {
+                background-color: black;
+                color: white;
+                
+            }
+
+            input[type="submit"]:hover {
+                background-color: lightcoral;
+                margin-top: 5px;
+            }
+
+            .textbox input[type="text"] {
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+
+            .textbox label {
+                font-size: 20px;
+            }
+        </style>
+    </head>    
+
+    <body>
+        <h1>Contact Me!</h1>
+        <form name="contactForm" method="get" action="INST377_Lab2_Page2.html">
+                <div class="textbox">
+                    <!-- User Name Details -->
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" required>
+                    <br>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" required>
+                </div>
+                <br>
+                <hr>
+            
+
+                <!-- User Grade Level -->
+                <div class="textbox">
+                <label for="reason">Grade Level:</label> <br>
+                <input type="radio" name="reason">Freshmen <br>
+                <input type="radio" name="reason">Sophomore <br>
+                <input type="radio" name="reason">Junior <br>
+                <input type="radio" name="reason">Senior <br>
+                </div>
+                <br>
+                
+                <!-- Date Form Was Submitted -->
+                <div class="textbox">
+                <label for="inquiryDate">Form Submission Date:</label>
+                <input type="datetime-local" id="inquiryDate" required>
+                </div>
+                <br>
+                <hr>
+         
+
+
+            <input type="submit">
+        </form>
+    </body>
+
+</html>
